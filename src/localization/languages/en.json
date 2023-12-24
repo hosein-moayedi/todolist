@@ -1,0 +1,14 @@
+{
+    "screens": {
+        "splash": {
+            "AppName": "Todo List"
+        },
+        "login": {
+            "Login": "Login",
+            "Enter": "Enter"
+        },
+        "home": {
+            "HelloWorld": "Hello World!"
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "screens": {
+        "splash": {
+            "AppName": "Aufgabenliste"
+        },
+        "login": {
+            "Login": "Anmeldung",
+            "Enter": "Eingeben"
+        },
+        "home": {
+            "HelloWorld": "Hallo Welt!"
+        }
+    }
+}

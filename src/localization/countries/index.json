@@ -1,0 +1,2392 @@
+{
+  "AFG": {
+    "name": {
+      "en": "Afghanistan"
+    },
+    "iso2": "AF",
+    "dialCode": "93",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "AFG"
+  },
+  "ALB": {
+    "name": {
+      "en": "Albania"
+    },
+    "iso2": "AL",
+    "dialCode": "355",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "ALB"
+  },
+  "DZA": {
+    "name": {
+      "en": "Algeria"
+    },
+    "iso2": "DZ",
+    "dialCode": "213",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "DZA"
+  },
+  "ASM": {
+    "name": {
+      "en": "American Samoa"
+    },
+    "iso2": "AS",
+    "dialCode": "1684",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "ASM"
+  },
+  "AND": {
+    "name": {
+      "en": "Andorra"
+    },
+    "iso2": "AD",
+    "dialCode": "376",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "AND"
+  },
+  "AGO": {
+    "name": {
+      "en": "Angola"
+    },
+    "iso2": "AO",
+    "dialCode": "244",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "AGO"
+  },
+  "AIA": {
+    "name": {
+      "en": "Anguilla"
+    },
+    "iso2": "AI",
+    "dialCode": "1264",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "AIA"
+  },
+  "ATG": {
+    "name": {
+      "en": "Antigua and Barbuda"
+    },
+    "iso2": "AG",
+    "dialCode": "1268",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "ATG"
+  },
+  "ARG": {
+    "name": {
+      "en": "Argentina"
+    },
+    "iso2": "AR",
+    "dialCode": "54",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "ARG"
+  },
+  "ARM": {
+    "name": {
+      "en": "Armenia"
+    },
+    "iso2": "AM",
+    "dialCode": "374",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "ARM"
+  },
+  "ABW": {
+    "name": {
+      "en": "Aruba"
+    },
+    "iso2": "AW",
+    "dialCode": "297",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "ABW"
+  },
+  "AUS": {
+    "name": {
+      "en": "Australia"
+    },
+    "iso2": "AU",
+    "dialCode": "61",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "AUS"
+  },
+  "AUT": {
+    "name": {
+      "en": "Austria"
+    },
+    "iso2": "AT",
+    "dialCode": "43",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "AUT"
+  },
+  "AZE": {
+    "name": {
+      "en": "Azerbaijan"
+    },
+    "iso2": "AZ",
+    "dialCode": "994",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "AZE"
+  },
+  "BHS": {
+    "name": {
+      "en": "Bahamas"
+    },
+    "iso2": "BS",
+    "dialCode": "1242",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "BHS"
+  },
+  "BHR": {
+    "name": {
+      "en": "Bahrain"
+    },
+    "iso2": "BH",
+    "dialCode": "973",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "BHR"
+  },
+  "BGD": {
+    "name": {
+      "en": "Bangladesh"
+    },
+    "iso2": "BD",
+    "dialCode": "880",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "BGD"
+  },
+  "BRB": {
+    "name": {
+      "en": "Barbados"
+    },
+    "iso2": "BB",
+    "dialCode": "1246",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "BRB"
+  },
+  "BLR": {
+    "name": {
+      "en": "Belarus"
+    },
+    "iso2": "BY",
+    "dialCode": "375",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "BLR"
+  },
+  "BEL": {
+    "name": {
+      "en": "Belgium"
+    },
+    "iso2": "BE",
+    "dialCode": "32",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "BEL"
+  },
+  "BLZ": {
+    "name": {
+      "en": "Belize"
+    },
+    "iso2": "BZ",
+    "dialCode": "501",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "BLZ"
+  },
+  "BEN": {
+    "name": {
+      "en": "Benin"
+    },
+    "iso2": "BJ",
+    "dialCode": "229",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "BEN"
+  },
+  "BMU": {
+    "name": {
+      "en": "Bermuda"
+    },
+    "iso2": "BM",
+    "dialCode": "1441",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "BMU"
+  },
+  "BTN": {
+    "name": {
+      "en": "Bhutan"
+    },
+    "iso2": "BT",
+    "dialCode": "975",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "BTN"
+  },
+  "BOL": {
+    "name": {
+      "en": "Bolivia"
+    },
+    "iso2": "BO",
+    "dialCode": "591",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "BOL"
+  },
+  "BIH": {
+    "name": {
+      "en": "Bosnia and Herzegovina"
+    },
+    "iso2": "BA",
+    "dialCode": "387",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "BIH"
+  },
+  "BWA": {
+    "name": {
+      "en": "Botswana"
+    },
+    "iso2": "BW",
+    "dialCode": "267",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "BWA"
+  },
+  "BRA": {
+    "name": {
+      "en": "Brazil"
+    },
+    "iso2": "BR",
+    "dialCode": "55",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "BRA"
+  },
+  "IOT": {
+    "name": {
+      "en": "British Indian Ocean Territory"
+    },
+    "iso2": "IO",
+    "dialCode": "246",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "IOT"
+  },
+  "BRN": {
+    "name": {
+      "en": "Brunei Darussalam"
+    },
+    "iso2": "BN",
+    "dialCode": "673",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "BRN"
+  },
+  "BGR": {
+    "name": {
+      "en": "Bulgaria"
+    },
+    "iso2": "BG",
+    "dialCode": "359",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "BGR"
+  },
+  "BFA": {
+    "name": {
+      "en": "Burkina Faso"
+    },
+    "iso2": "BF",
+    "dialCode": "226",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "BFA"
+  },
+  "BDI": {
+    "name": {
+      "en": "Burundi"
+    },
+    "iso2": "BI",
+    "dialCode": "257",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "BDI"
+  },
+  "KHM": {
+    "name": {
+      "en": "Cambodia"
+    },
+    "iso2": "KH",
+    "dialCode": "855",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "KHM"
+  },
+  "CMR": {
+    "name": {
+      "en": "Cameroon"
+    },
+    "iso2": "CM",
+    "dialCode": "237",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "CMR"
+  },
+  "CAN": {
+    "name": {
+      "en": "Canada"
+    },
+    "iso2": "CA",
+    "dialCode": "1",
+    "priority": 1,
+    "areaCodes": [
+      "204",
+      "226",
+      "236",
+      "249",
+      "250",
+      "289",
+      "306",
+      "343",
+      "365",
+      "387",
+      "403",
+      "416",
+      "418",
+      "431",
+      "437",
+      "438",
+      "450",
+      "506",
+      "514",
+      "519",
+      "548",
+      "579",
+      "581",
+      "587",
+      "604",
+      "613",
+      "639",
+      "647",
+      "672",
+      "705",
+      "709",
+      "742",
+      "778",
+      "780",
+      "782",
+      "807",
+      "819",
+      "825",
+      "867",
+      "873",
+      "902",
+      "905"
+    ],
+    "iso3": "CAN"
+  },
+  "CYM": {
+    "name": {
+      "en": "Cayman Islands"
+    },
+    "iso2": "KY",
+    "dialCode": "1345",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "CYM"
+  },
+  "CAF": {
+    "name": {
+      "en": "Central African Republic"
+    },
+    "iso2": "CF",
+    "dialCode": "236",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "CAF"
+  },
+  "TCD": {
+    "name": {
+      "en": "Chad"
+    },
+    "iso2": "TD",
+    "dialCode": "235",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "TCD"
+  },
+  "CHL": {
+    "name": {
+      "en": "Chile"
+    },
+    "iso2": "CL",
+    "dialCode": "56",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "CHL"
+  },
+  "CHN": {
+    "name": {
+      "en": "China"
+    },
+    "iso2": "CN",
+    "dialCode": "86",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "CHN"
+  },
+  "CXR": {
+    "name": {
+      "en": "Christmas Island"
+    },
+    "iso2": "CX",
+    "dialCode": "61",
+    "priority": 2,
+    "areaCodes": null,
+    "iso3": "CXR"
+  },
+  "CCK": {
+    "name": {
+      "en": "Cocos (Keeling) Islands"
+    },
+    "iso2": "CC",
+    "dialCode": "61",
+    "priority": 1,
+    "areaCodes": null,
+    "iso3": "CCK"
+  },
+  "COL": {
+    "name": {
+      "en": "Colombia"
+    },
+    "iso2": "CO",
+    "dialCode": "57",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "COL"
+  },
+  "COM": {
+    "name": {
+      "en": "Comoros"
+    },
+    "iso2": "KM",
+    "dialCode": "269",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "COM"
+  },
+  "COD": {
+    "name": {
+      "en": "Congo, the Democratic Republic of the"
+    },
+    "iso2": "CD",
+    "dialCode": "243",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "COD"
+  },
+  "COG": {
+    "name": {
+      "en": "Congo"
+    },
+    "iso2": "CG",
+    "dialCode": "242",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "COG"
+  },
+  "COK": {
+    "name": {
+      "en": "Cook Islands"
+    },
+    "iso2": "CK",
+    "dialCode": "682",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "COK"
+  },
+  "CRI": {
+    "name": {
+      "en": "Costa Rica"
+    },
+    "iso2": "CR",
+    "dialCode": "506",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "CRI"
+  },
+  "CIV": {
+    "name": {
+      "en": "Cote D'Ivoire"
+    },
+    "iso2": "CI",
+    "dialCode": "225",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "CIV"
+  },
+  "HRV": {
+    "name": {
+      "en": "Croatia"
+    },
+    "iso2": "HR",
+    "dialCode": "385",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "HRV"
+  },
+  "CUB": {
+    "name": {
+      "en": "Cuba"
+    },
+    "iso2": "CU",
+    "dialCode": "53",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "CUB"
+  },
+  "CUW": {
+    "name": {
+      "en": "Curaçao"
+    },
+    "iso2": "CW",
+    "dialCode": "599",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "CUW"
+  },
+  "CYP": {
+    "name": {
+      "en": "Cyprus"
+    },
+    "iso2": "CY",
+    "dialCode": "357",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "CYP"
+  },
+  "CZE": {
+    "name": {
+      "en": "Czech Republic"
+    },
+    "iso2": "CZ",
+    "dialCode": "420",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "CZE"
+  },
+  "DNK": {
+    "name": {
+      "en": "Denmark"
+    },
+    "iso2": "DK",
+    "dialCode": "45",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "DNK"
+  },
+  "DJI": {
+    "name": {
+      "en": "Djibouti"
+    },
+    "iso2": "DJ",
+    "dialCode": "253",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "DJI"
+  },
+  "DMA": {
+    "name": {
+      "en": "Dominica"
+    },
+    "iso2": "DM",
+    "dialCode": "1767",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "DMA"
+  },
+  "DOM": {
+    "name": {
+      "en": "Dominican Republic"
+    },
+    "iso2": "DO",
+    "dialCode": "1",
+    "priority": 2,
+    "areaCodes": [
+      "809",
+      "829",
+      "849"
+    ],
+    "iso3": "DOM"
+  },
+  "ECU": {
+    "name": {
+      "en": "Ecuador"
+    },
+    "iso2": "EC",
+    "dialCode": "593",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "ECU"
+  },
+  "EGY": {
+    "name": {
+      "en": "Egypt"
+    },
+    "iso2": "EG",
+    "dialCode": "20",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "EGY"
+  },
+  "SLV": {
+    "name": {
+      "en": "El Salvador"
+    },
+    "iso2": "SV",
+    "dialCode": "503",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "SLV"
+  },
+  "GNQ": {
+    "name": {
+      "en": "Equatorial Guinea"
+    },
+    "iso2": "GQ",
+    "dialCode": "240",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "GNQ"
+  },
+  "ERI": {
+    "name": {
+      "en": "Eritrea"
+    },
+    "iso2": "ER",
+    "dialCode": "291",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "ERI"
+  },
+  "EST": {
+    "name": {
+      "en": "Estonia"
+    },
+    "iso2": "EE",
+    "dialCode": "372",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "EST"
+  },
+  "ETH": {
+    "name": {
+      "en": "Ethiopia"
+    },
+    "iso2": "ET",
+    "dialCode": "251",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "ETH"
+  },
+  "FLK": {
+    "name": {
+      "en": "Falkland Islands (Malvinas)"
+    },
+    "iso2": "FK",
+    "dialCode": "500",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "FLK"
+  },
+  "FRO": {
+    "name": {
+      "en": "Faroe Islands"
+    },
+    "iso2": "FO",
+    "dialCode": "298",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "FRO"
+  },
+  "FJI": {
+    "name": {
+      "en": "Fiji"
+    },
+    "iso2": "FJ",
+    "dialCode": "679",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "FJI"
+  },
+  "FIN": {
+    "name": {
+      "en": "Finland"
+    },
+    "iso2": "FI",
+    "dialCode": "358",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "FIN"
+  },
+  "FRA": {
+    "name": {
+      "en": "France"
+    },
+    "iso2": "FR",
+    "dialCode": "33",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "FRA"
+  },
+  "GUF": {
+    "name": {
+      "en": "French Guiana"
+    },
+    "iso2": "GF",
+    "dialCode": "594",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "GUF"
+  },
+  "PYF": {
+    "name": {
+      "en": "French Polynesia"
+    },
+    "iso2": "PF",
+    "dialCode": "689",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "PYF"
+  },
+  "GAB": {
+    "name": {
+      "en": "Gabon"
+    },
+    "iso2": "GA",
+    "dialCode": "241",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "GAB"
+  },
+  "GMB": {
+    "name": {
+      "en": "Gambia"
+    },
+    "iso2": "GM",
+    "dialCode": "220",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "GMB"
+  },
+  "GEO": {
+    "name": {
+      "en": "Georgia"
+    },
+    "iso2": "GE",
+    "dialCode": "995",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "GEO"
+  },
+  "DEU": {
+    "name": {
+      "en": "Germany"
+    },
+    "iso2": "DE",
+    "dialCode": "49",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "DEU"
+  },
+  "GHA": {
+    "name": {
+      "en": "Ghana"
+    },
+    "iso2": "GH",
+    "dialCode": "233",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "GHA"
+  },
+  "GIB": {
+    "name": {
+      "en": "Gibraltar"
+    },
+    "iso2": "GI",
+    "dialCode": "350",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "GIB"
+  },
+  "GRC": {
+    "name": {
+      "en": "Greece"
+    },
+    "iso2": "GR",
+    "dialCode": "30",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "GRC"
+  },
+  "GRL": {
+    "name": {
+      "en": "Greenland"
+    },
+    "iso2": "GL",
+    "dialCode": "299",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "GRL"
+  },
+  "GRD": {
+    "name": {
+      "en": "Grenada"
+    },
+    "iso2": "GD",
+    "dialCode": "1473",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "GRD"
+  },
+  "GLP": {
+    "name": {
+      "en": "Guadeloupe"
+    },
+    "iso2": "GP",
+    "dialCode": "590",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "GLP"
+  },
+  "GUM": {
+    "name": {
+      "en": "Guam"
+    },
+    "iso2": "GU",
+    "dialCode": "1671",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "GUM"
+  },
+  "GTM": {
+    "name": {
+      "en": "Guatemala"
+    },
+    "iso2": "GT",
+    "dialCode": "502",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "GTM"
+  },
+  "GGY": {
+    "name": {
+      "en": "Guernsey"
+    },
+    "iso2": "GG",
+    "dialCode": "44",
+    "priority": 1,
+    "areaCodes": null,
+    "iso3": "GGY"
+  },
+  "GIN": {
+    "name": {
+      "en": "Guinea"
+    },
+    "iso2": "GN",
+    "dialCode": "224",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "GIN"
+  },
+  "GNB": {
+    "name": {
+      "en": "Guinea-Bissau"
+    },
+    "iso2": "GW",
+    "dialCode": "245",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "GNB"
+  },
+  "GUY": {
+    "name": {
+      "en": "Guyana"
+    },
+    "iso2": "GY",
+    "dialCode": "592",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "GUY"
+  },
+  "HTI": {
+    "name": {
+      "en": "Haiti"
+    },
+    "iso2": "HT",
+    "dialCode": "509",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "HTI"
+  },
+  "HND": {
+    "name": {
+      "en": "Honduras"
+    },
+    "iso2": "HN",
+    "dialCode": "504",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "HND"
+  },
+  "HKG": {
+    "name": {
+      "en": "Hong Kong"
+    },
+    "iso2": "HK",
+    "dialCode": "852",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "HKG"
+  },
+  "HUN": {
+    "name": {
+      "en": "Hungary"
+    },
+    "iso2": "HU",
+    "dialCode": "36",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "HUN"
+  },
+  "ISL": {
+    "name": {
+      "en": "Iceland"
+    },
+    "iso2": "IS",
+    "dialCode": "354",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "ISL"
+  },
+  "IND": {
+    "name": {
+      "en": "India"
+    },
+    "iso2": "IN",
+    "dialCode": "91",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "IND"
+  },
+  "IDN": {
+    "name": {
+      "en": "Indonesia"
+    },
+    "iso2": "ID",
+    "dialCode": "62",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "IDN"
+  },
+  "IRN": {
+    "name": {
+      "en": "Iran, Islamic Republic of"
+    },
+    "iso2": "IR",
+    "dialCode": "98",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "IRN"
+  },
+  "IRQ": {
+    "name": {
+      "en": "Iraq"
+    },
+    "iso2": "IQ",
+    "dialCode": "964",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "IRQ"
+  },
+  "IRL": {
+    "name": {
+      "en": "Ireland"
+    },
+    "iso2": "IE",
+    "dialCode": "353",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "IRL"
+  },
+  "IMN": {
+    "name": {
+      "en": "Isle of Man"
+    },
+    "iso2": "IM",
+    "dialCode": "44",
+    "priority": 2,
+    "areaCodes": null,
+    "iso3": "IMN"
+  },
+  "ISR": {
+    "name": {
+      "en": "Israel"
+    },
+    "iso2": "IL",
+    "dialCode": "972",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "ISR"
+  },
+  "ITA": {
+    "name": {
+      "en": "Italy"
+    },
+    "iso2": "IT",
+    "dialCode": "39",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "ITA"
+  },
+  "JAM": {
+    "name": {
+      "en": "Jamaica"
+    },
+    "iso2": "JM",
+    "dialCode": "1876",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "JAM"
+  },
+  "JPN": {
+    "name": {
+      "en": "Japan"
+    },
+    "iso2": "JP",
+    "dialCode": "81",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "JPN"
+  },
+  "JEY": {
+    "name": {
+      "en": "Jersey"
+    },
+    "iso2": "JE",
+    "dialCode": "44",
+    "priority": 3,
+    "areaCodes": null,
+    "iso3": "JEY"
+  },
+  "JOR": {
+    "name": {
+      "en": "Jordan"
+    },
+    "iso2": "JO",
+    "dialCode": "962",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "JOR"
+  },
+  "KAZ": {
+    "name": {
+      "en": "Kazakhstan"
+    },
+    "iso2": "KZ",
+    "dialCode": "7",
+    "priority": 1,
+    "areaCodes": null,
+    "iso3": "KAZ"
+  },
+  "KEN": {
+    "name": {
+      "en": "Kenya"
+    },
+    "iso2": "KE",
+    "dialCode": "254",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "KEN"
+  },
+  "KIR": {
+    "name": {
+      "en": "Kiribati"
+    },
+    "iso2": "KI",
+    "dialCode": "686",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "KIR"
+  },
+  "KWT": {
+    "name": {
+      "en": "Kuwait"
+    },
+    "iso2": "KW",
+    "dialCode": "965",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "KWT"
+  },
+  "KGZ": {
+    "name": {
+      "en": "Kyrgyzstan"
+    },
+    "iso2": "KG",
+    "dialCode": "996",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "KGZ"
+  },
+  "LAO": {
+    "name": {
+      "en": "Lao People's Democratic Republic"
+    },
+    "iso2": "LA",
+    "dialCode": "856",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "LAO"
+  },
+  "LVA": {
+    "name": {
+      "en": "Latvia"
+    },
+    "iso2": "LV",
+    "dialCode": "371",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "LVA"
+  },
+  "LBN": {
+    "name": {
+      "en": "Lebanon"
+    },
+    "iso2": "LB",
+    "dialCode": "961",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "LBN"
+  },
+  "LSO": {
+    "name": {
+      "en": "Lesotho"
+    },
+    "iso2": "LS",
+    "dialCode": "266",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "LSO"
+  },
+  "LBR": {
+    "name": {
+      "en": "Liberia"
+    },
+    "iso2": "LR",
+    "dialCode": "231",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "LBR"
+  },
+  "LBY": {
+    "name": {
+      "en": "Libya"
+    },
+    "iso2": "LY",
+    "dialCode": "218",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "LBY"
+  },
+  "LIE": {
+    "name": {
+      "en": "Liechtenstein"
+    },
+    "iso2": "LI",
+    "dialCode": "423",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "LIE"
+  },
+  "LTU": {
+    "name": {
+      "en": "Lithuania"
+    },
+    "iso2": "LT",
+    "dialCode": "370",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "LTU"
+  },
+  "LUX": {
+    "name": {
+      "en": "Luxembourg"
+    },
+    "iso2": "LU",
+    "dialCode": "352",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "LUX"
+  },
+  "MAC": {
+    "name": {
+      "en": "Macao"
+    },
+    "iso2": "MO",
+    "dialCode": "853",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "MAC"
+  },
+  "MKD": {
+    "name": {
+      "en": "North Macedonia, Republic of"
+    },
+    "iso2": "MK",
+    "dialCode": "389",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "MKD"
+  },
+  "MDG": {
+    "name": {
+      "en": "Madagascar"
+    },
+    "iso2": "MG",
+    "dialCode": "261",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "MDG"
+  },
+  "MWI": {
+    "name": {
+      "en": "Malaysia"
+    },
+    "iso2": "MY",
+    "dialCode": "60",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "MWI"
+  },
+  "MDV": {
+    "name": {
+      "en": "Maldives"
+    },
+    "iso2": "MV",
+    "dialCode": "960",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "MDV"
+  },
+  "MLI": {
+    "name": {
+      "en": "Malta"
+    },
+    "iso2": "MT",
+    "dialCode": "356",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "MLI"
+  },
+  "MHL": {
+    "name": {
+      "en": "Marshall Islands"
+    },
+    "iso2": "MH",
+    "dialCode": "692",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "MHL"
+  },
+  "MTQ": {
+    "name": {
+      "en": "Martinique"
+    },
+    "iso2": "MQ",
+    "dialCode": "596",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "MTQ"
+  },
+  "MRT": {
+    "name": {
+      "en": "Mauritius"
+    },
+    "iso2": "MU",
+    "dialCode": "230",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "MRT"
+  },
+  "MYT": {
+    "name": {
+      "en": "Mayotte"
+    },
+    "iso2": "YT",
+    "dialCode": "262",
+    "priority": 1,
+    "areaCodes": null,
+    "iso3": "MYT"
+  },
+  "MEX": {
+    "name": {
+      "en": "Mexico"
+    },
+    "iso2": "MX",
+    "dialCode": "52",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "MEX"
+  },
+  "FSM": {
+    "name": {
+      "en": "Micronesia, Federated States of"
+    },
+    "iso2": "FM",
+    "dialCode": "691",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "FSM"
+  },
+  "MDA": {
+    "name": {
+      "en": "Moldova, Republic of"
+    },
+    "iso2": "MD",
+    "dialCode": "373",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "MDA"
+  },
+  "MCO": {
+    "name": {
+      "en": "Monaco"
+    },
+    "iso2": "MC",
+    "dialCode": "377",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "MCO"
+  },
+  "MNG": {
+    "name": {
+      "en": "Mongolia"
+    },
+    "iso2": "MN",
+    "dialCode": "976",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "MNG"
+  },
+  "MNE": {
+    "name": {
+      "en": "Montenegro"
+    },
+    "iso2": "ME",
+    "dialCode": "382",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "MNE"
+  },
+  "MSR": {
+    "name": {
+      "en": "Montserrat"
+    },
+    "iso2": "MS",
+    "dialCode": "1664",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "MSR"
+  },
+  "MAR": {
+    "name": {
+      "en": "Morocco"
+    },
+    "iso2": "MA",
+    "dialCode": "212",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "MAR"
+  },
+  "MOZ": {
+    "name": {
+      "en": "Mozambique"
+    },
+    "iso2": "MZ",
+    "dialCode": "258",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "MOZ"
+  },
+  "MMR": {
+    "name": {
+      "en": "Myanmar"
+    },
+    "iso2": "MM",
+    "dialCode": "95",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "MMR"
+  },
+  "NAM": {
+    "name": {
+      "en": "Namibia"
+    },
+    "iso2": "NA",
+    "dialCode": "264",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "NAM"
+  },
+  "NRU": {
+    "name": {
+      "en": "Nauru"
+    },
+    "iso2": "NR",
+    "dialCode": "674",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "NRU"
+  },
+  "NPL": {
+    "name": {
+      "en": "Nepal"
+    },
+    "iso2": "NP",
+    "dialCode": "977",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "NPL"
+  },
+  "NLD": {
+    "name": {
+      "en": "Netherlands"
+    },
+    "iso2": "NL",
+    "dialCode": "31",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "NLD"
+  },
+  "NCL": {
+    "name": {
+      "en": "New Caledonia"
+    },
+    "iso2": "NC",
+    "dialCode": "687",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "NCL"
+  },
+  "NZL": {
+    "name": {
+      "en": "New Zealand"
+    },
+    "iso2": "NZ",
+    "dialCode": "64",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "NZL"
+  },
+  "NIC": {
+    "name": {
+      "en": "Nicaragua"
+    },
+    "iso2": "NI",
+    "dialCode": "505",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "NIC"
+  },
+  "NER": {
+    "name": {
+      "en": "Niger"
+    },
+    "iso2": "NE",
+    "dialCode": "227",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "NER"
+  },
+  "NGA": {
+    "name": {
+      "en": "Nigeria"
+    },
+    "iso2": "NG",
+    "dialCode": "234",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "NGA"
+  },
+  "NIU": {
+    "name": {
+      "en": "Niue"
+    },
+    "iso2": "NU",
+    "dialCode": "683",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "NIU"
+  },
+  "NFK": {
+    "name": {
+      "en": "Norfolk Island"
+    },
+    "iso2": "NF",
+    "dialCode": "672",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "NFK"
+  },
+  "PRK": {
+    "name": {
+      "en": "North Korea"
+    },
+    "iso2": "KP",
+    "dialCode": "850",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "PRK"
+  },
+  "MNP": {
+    "name": {
+      "en": "Northern Mariana Islands"
+    },
+    "iso2": "MP",
+    "dialCode": "1670",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "MNP"
+  },
+  "NOR": {
+    "name": {
+      "en": "Norway"
+    },
+    "iso2": "NO",
+    "dialCode": "47",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "NOR"
+  },
+  "OMN": {
+    "name": {
+      "en": "Oman"
+    },
+    "iso2": "OM",
+    "dialCode": "968",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "OMN"
+  },
+  "PAK": {
+    "name": {
+      "en": "Pakistan"
+    },
+    "iso2": "PK",
+    "dialCode": "92",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "PAK"
+  },
+  "PLW": {
+    "name": {
+      "en": "Palau"
+    },
+    "iso2": "PW",
+    "dialCode": "680",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "PLW"
+  },
+  "PSE": {
+    "name": {
+      "en": "Palestinian Territory, Occupied"
+    },
+    "iso2": "PS",
+    "dialCode": "970",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "PSE"
+  },
+  "PAN": {
+    "name": {
+      "en": "Panama"
+    },
+    "iso2": "PA",
+    "dialCode": "507",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "PAN"
+  },
+  "PNG": {
+    "name": {
+      "en": "Papua New Guinea"
+    },
+    "iso2": "PG",
+    "dialCode": "675",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "PNG"
+  },
+  "PRY": {
+    "name": {
+      "en": "Paraguay"
+    },
+    "iso2": "PY",
+    "dialCode": "595",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "PRY"
+  },
+  "PER": {
+    "name": {
+      "en": "Peru"
+    },
+    "iso2": "PE",
+    "dialCode": "51",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "PER"
+  },
+  "PHL": {
+    "name": {
+      "en": "Philippines"
+    },
+    "iso2": "PH",
+    "dialCode": "63",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "PHL"
+  },
+  "POL": {
+    "name": {
+      "en": "Poland"
+    },
+    "iso2": "PL",
+    "dialCode": "48",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "POL"
+  },
+  "PRT": {
+    "name": {
+      "en": "Portugal"
+    },
+    "iso2": "PT",
+    "dialCode": "351",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "PRT"
+  },
+  "PRI": {
+    "name": {
+      "en": "Puerto Rico"
+    },
+    "iso2": "PR",
+    "dialCode": "1",
+    "priority": 3,
+    "areaCodes": [
+      "787",
+      "939"
+    ],
+    "iso3": "PRI"
+  },
+  "QAT": {
+    "name": {
+      "en": "Qatar"
+    },
+    "iso2": "QA",
+    "dialCode": "974",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "QAT"
+  },
+  "REU": {
+    "name": {
+      "en": "Reunion"
+    },
+    "iso2": "RE",
+    "dialCode": "262",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "REU"
+  },
+  "ROU": {
+    "name": {
+      "en": "Romania"
+    },
+    "iso2": "RO",
+    "dialCode": "40",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "ROU"
+  },
+  "RUS": {
+    "name": {
+      "en": "Russian Federation"
+    },
+    "iso2": "RU",
+    "dialCode": "7",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "RUS"
+  },
+  "RWA": {
+    "name": {
+      "en": "Rwanda"
+    },
+    "iso2": "RW",
+    "dialCode": "250",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "RWA"
+  },
+  "BLM": {
+    "name": {
+      "en": "Saint Barthélemy"
+    },
+    "iso2": "BL",
+    "dialCode": "590",
+    "priority": 1,
+    "areaCodes": null,
+    "iso3": "BLM"
+  },
+  "SHN": {
+    "name": {
+      "en": "Saint Helena"
+    },
+    "iso2": "SH",
+    "dialCode": "290",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "SHN"
+  },
+  "KNA": {
+    "name": {
+      "en": "Saint Kitts and Nevis"
+    },
+    "iso2": "KN",
+    "dialCode": "1869",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "KNA"
+  },
+  "LCA": {
+    "name": {
+      "en": "Saint Lucia"
+    },
+    "iso2": "LC",
+    "dialCode": "1758",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "LCA"
+  },
+  "MAF": {
+    "name": {
+      "en": "Saint Martin (French part)"
+    },
+    "iso2": "MF",
+    "dialCode": "590",
+    "priority": 2,
+    "areaCodes": null,
+    "iso3": "MAF"
+  },
+  "SPM": {
+    "name": {
+      "en": "Saint Pierre and Miquelon"
+    },
+    "iso2": "PM",
+    "dialCode": "508",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "SPM"
+  },
+  "VCT": {
+    "name": {
+      "en": "Saint Vincent and the Grenadines"
+    },
+    "iso2": "VC",
+    "dialCode": "1784",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "VCT"
+  },
+  "WSM": {
+    "name": {
+      "en": "Samoa"
+    },
+    "iso2": "WS",
+    "dialCode": "685",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "WSM"
+  },
+  "SMR": {
+    "name": {
+      "en": "San Marino"
+    },
+    "iso2": "SM",
+    "dialCode": "378",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "SMR"
+  },
+  "STP": {
+    "name": {
+      "en": "Sao Tome and Principe"
+    },
+    "iso2": "ST",
+    "dialCode": "239",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "STP"
+  },
+  "SAU": {
+    "name": {
+      "en": "Saudi Arabia"
+    },
+    "iso2": "SA",
+    "dialCode": "966",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "SAU"
+  },
+  "SEN": {
+    "name": {
+      "en": "Senegal"
+    },
+    "iso2": "SN",
+    "dialCode": "221",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "SEN"
+  },
+  "SRB": {
+    "name": {
+      "en": "Serbia"
+    },
+    "iso2": "RS",
+    "dialCode": "381",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "SRB"
+  },
+  "SYC": {
+    "name": {
+      "en": "Seychelles"
+    },
+    "iso2": "SC",
+    "dialCode": "248",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "SYC"
+  },
+  "SLE": {
+    "name": {
+      "en": "Sierra Leone"
+    },
+    "iso2": "SL",
+    "dialCode": "232",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "SLE"
+  },
+  "SGP": {
+    "name": {
+      "en": "Singapore"
+    },
+    "iso2": "SG",
+    "dialCode": "65",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "SGP"
+  },
+  "SXM": {
+    "name": {
+      "en": "Sint Maarten (Dutch part)"
+    },
+    "iso2": "SX",
+    "dialCode": "1721",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "SXM"
+  },
+  "SVK": {
+    "name": {
+      "en": "Slovakia"
+    },
+    "iso2": "SK",
+    "dialCode": "421",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "SVK"
+  },
+  "SVN": {
+    "name": {
+      "en": "Slovenia"
+    },
+    "iso2": "SI",
+    "dialCode": "386",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "SVN"
+  },
+  "SLB": {
+    "name": {
+      "en": "Solomon Islands"
+    },
+    "iso2": "SB",
+    "dialCode": "677",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "SLB"
+  },
+  "SOM": {
+    "name": {
+      "en": "South Africa"
+    },
+    "iso2": "ZA",
+    "dialCode": "27",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "SOM"
+  },
+  "KOR": {
+    "name": {
+      "en": "South Korea"
+    },
+    "iso2": "KR",
+    "dialCode": "82",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "KOR"
+  },
+  "SSD": {
+    "name": {
+      "en": "South Sudan"
+    },
+    "iso2": "SS",
+    "dialCode": "211",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "SSD"
+  },
+  "ESP": {
+    "name": {
+      "en": "Spain"
+    },
+    "iso2": "ES",
+    "dialCode": "34",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "ESP"
+  },
+  "LKA": {
+    "name": {
+      "en": "Sri Lanka"
+    },
+    "iso2": "LK",
+    "dialCode": "94",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "LKA"
+  },
+  "SDN": {
+    "name": {
+      "en": "Sudan"
+    },
+    "iso2": "SD",
+    "dialCode": "249",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "SDN"
+  },
+  "SUR": {
+    "name": {
+      "en": "Suriname"
+    },
+    "iso2": "SR",
+    "dialCode": "597",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "SUR"
+  },
+  "SJM": {
+    "name": {
+      "en": "Svalbard and Jan Mayen"
+    },
+    "iso2": "SJ",
+    "dialCode": "47",
+    "priority": 1,
+    "areaCodes": null,
+    "iso3": "SJM"
+  },
+  "SWZ": {
+    "name": {
+      "en": "Eswatini"
+    },
+    "iso2": "SZ",
+    "dialCode": "268",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "SWZ"
+  },
+  "SWE": {
+    "name": {
+      "en": "Sweden"
+    },
+    "iso2": "SE",
+    "dialCode": "46",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "SWE"
+  },
+  "CHE": {
+    "name": {
+      "en": "Switzerland"
+    },
+    "iso2": "CH",
+    "dialCode": "41",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "CHE"
+  },
+  "SYR": {
+    "name": {
+      "en": "Syrian Arab Republic"
+    },
+    "iso2": "SY",
+    "dialCode": "963",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "SYR"
+  },
+  "TWN": {
+    "name": {
+      "en": "Taiwan"
+    },
+    "iso2": "TW",
+    "dialCode": "886",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "TWN"
+  },
+  "TJK": {
+    "name": {
+      "en": "Tajikistan"
+    },
+    "iso2": "TJ",
+    "dialCode": "992",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "TJK"
+  },
+  "TZA": {
+    "name": {
+      "en": "Tanzania, United Republic of"
+    },
+    "iso2": "TZ",
+    "dialCode": "255",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "TZA"
+  },
+  "THA": {
+    "name": {
+      "en": "Thailand"
+    },
+    "iso2": "TH",
+    "dialCode": "66",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "THA"
+  },
+  "TLS": {
+    "name": {
+      "en": "Timor-Leste"
+    },
+    "iso2": "TL",
+    "dialCode": "670",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "TLS"
+  },
+  "TGO": {
+    "name": {
+      "en": "Togo"
+    },
+    "iso2": "TG",
+    "dialCode": "228",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "TGO"
+  },
+  "TKL": {
+    "name": {
+      "en": "Tokelau"
+    },
+    "iso2": "TK",
+    "dialCode": "690",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "TKL"
+  },
+  "TON": {
+    "name": {
+      "en": "Tonga"
+    },
+    "iso2": "TO",
+    "dialCode": "676",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "TON"
+  },
+  "TTO": {
+    "name": {
+      "en": "Trinidad and Tobago"
+    },
+    "iso2": "TT",
+    "dialCode": "1868",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "TTO"
+  },
+  "TUN": {
+    "name": {
+      "en": "Tunisia"
+    },
+    "iso2": "TN",
+    "dialCode": "216",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "TUN"
+  },
+  "TUR": {
+    "name": {
+      "en": "Turkey"
+    },
+    "iso2": "TR",
+    "dialCode": "90",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "TUR"
+  },
+  "TKM": {
+    "name": {
+      "en": "Turkmenistan"
+    },
+    "iso2": "TM",
+    "dialCode": "993",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "TKM"
+  },
+  "TCA": {
+    "name": {
+      "en": "Turks and Caicos Islands"
+    },
+    "iso2": "TC",
+    "dialCode": "1649",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "TCA"
+  },
+  "TUV": {
+    "name": {
+      "en": "Tuvalu"
+    },
+    "iso2": "TV",
+    "dialCode": "688",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "TUV"
+  },
+  "VIR": {
+    "name": {
+      "en": "Virgin Islands, U.S."
+    },
+    "iso2": "VI",
+    "dialCode": "1340",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "VIR"
+  },
+  "UGA": {
+    "name": {
+      "en": "Uganda"
+    },
+    "iso2": "UG",
+    "dialCode": "256",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "UGA"
+  },
+  "UKR": {
+    "name": {
+      "en": "Ukraine"
+    },
+    "iso2": "UA",
+    "dialCode": "380",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "UKR"
+  },
+  "ARE": {
+    "name": {
+      "en": "United Arab Emirates"
+    },
+    "iso2": "AE",
+    "dialCode": "971",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "ARE"
+  },
+  "GBR": {
+    "name": {
+      "en": "United Kingdom"
+    },
+    "iso2": "GB",
+    "dialCode": "44",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "GBR"
+  },
+  "USA": {
+    "name": {
+      "en": "United States of America"
+    },
+    "iso2": "US",
+    "dialCode": "1",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "USA"
+  },
+  "URY": {
+    "name": {
+      "en": "Uruguay"
+    },
+    "iso2": "UY",
+    "dialCode": "598",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "URY"
+  },
+  "UZB": {
+    "name": {
+      "en": "Uzbekistan"
+    },
+    "iso2": "UZ",
+    "dialCode": "998",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "UZB"
+  },
+  "VUT": {
+    "name": {
+      "en": "Vanuatu"
+    },
+    "iso2": "VU",
+    "dialCode": "678",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "VUT"
+  },
+  "VAT": {
+    "name": {
+      "en": "Holy See (Vatican City State)"
+    },
+    "iso2": "VA",
+    "dialCode": "39",
+    "priority": 1,
+    "areaCodes": null,
+    "iso3": "VAT"
+  },
+  "VNM": {
+    "name": {
+      "en": "Vietnam"
+    },
+    "iso2": "VN",
+    "dialCode": "84",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "VNM"
+  },
+  "WLF": {
+    "name": {
+      "en": "Wallis and Futuna"
+    },
+    "iso2": "WF",
+    "dialCode": "681",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "WLF"
+  },
+  "ESH": {
+    "name": {
+      "en": "Western Sahara"
+    },
+    "iso2": "EH",
+    "dialCode": "212",
+    "priority": 1,
+    "areaCodes": null,
+    "iso3": "ESH"
+  },
+  "YEM": {
+    "name": {
+      "en": "Yemen"
+    },
+    "iso2": "YE",
+    "dialCode": "967",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "YEM"
+  },
+  "ZMB": {
+    "name": {
+      "en": "Zambia"
+    },
+    "iso2": "ZM",
+    "dialCode": "260",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "ZMB"
+  },
+  "ZWE": {
+    "name": {
+      "en": "Zimbabwe"
+    },
+    "iso2": "ZW",
+    "dialCode": "263",
+    "priority": 0,
+    "areaCodes": null,
+    "iso3": "ZWE"
+  },
+  "ALA": {
+    "name": {
+      "en": "Åland Islands"
+    },
+    "iso2": "AX",
+    "dialCode": "358",
+    "priority": 1,
+    "areaCodes": null,
+    "iso3": "ALA"
+  }
+}
