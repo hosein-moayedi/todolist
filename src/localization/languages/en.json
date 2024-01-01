@@ -1,14 +1,40 @@
 {
     "screens": {
         "splash": {
-            "AppName": "Todo List"
+            "AppName": "Todo List",
+            "SplashScreen": "Splash Screen"
+        },
+        "register": {
+            "Register": "Register",
+            "Submit": "Submit"
         },
         "login": {
             "Login": "Login",
-            "Enter": "Enter"
+            "Submit": "Submit"
         },
         "home": {
-            "HelloWorld": "Hello World!"
+            "HomeScreen": "Home Screen",
+            "Logout": "Logout"
+        }
+    },
+    "schema": {
+        "baseSchema": {
+            "username": {
+                "Invalid": "Invalid username",
+                "MinLength": "Username must be at least {min} characters",
+                "MaxLength": "Username must be less than {max} characters",
+                "Required": "Required"
+            },
+            "email": {
+                "Invalid": "Invalid email address",
+                "Required": "Required"
+            },
+            "password": {
+                "MinLength": "Password must be at least {min} characters",
+                "MaxLength": "Password must be less than {max} characters",
+                "Complexity": "Password must contain at least one uppercase letter, one lowercase letter, and one number",
+                "Required": "Required"
+            }
         }
     }
 }

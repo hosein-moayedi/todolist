@@ -1,14 +1,40 @@
 {
     "screens": {
         "splash": {
-            "AppName": "Aufgabenliste"
+            "AppName": "Aufgabenliste",
+            "SplashScreen": "Begrüßungsbildschirm"
+        },
+        "register": {
+            "Register": "Registrieren",
+            "Submit": "Einreichen"
         },
         "login": {
             "Login": "Anmeldung",
-            "Enter": "Eingeben"
+            "Submit": "Einreichen"
         },
         "home": {
-            "HelloWorld": "Hallo Welt!"
+            "HomeScreen": "Startbildschirm",
+            "Logout": "Ausloggen"
+        }
+    },
+    "schema": {
+        "baseSchema": {
+            "username": {
+                "Invalid": "Ungültiger Benutzername",
+                "MinLength": "Benutzername muss mindestens {min} Zeichen lang sein",
+                "MaxLength": "Benutzername darf nicht länger als {max} Zeichen sein",
+                "Required": "Erforderlich"
+            },
+            "email": {
+                "Invalid": "Ungültige E-Mail-Adresse",
+                "Required": "Erforderlich"
+            },
+            "password": {
+                "MinLength": "Passwort muss mindestens {min} Zeichen lang sein",
+                "MaxLength": "Passwort darf nicht länger als {max} Zeichen sein",
+                "Complexity": "Passwort muss mindestens einen Großbuchstaben, einen Kleinbuchstaben und eine Zahl enthalten",
+                "Required": "Erforderlich"
+            }
         }
     }
 }

@@ -1,17 +1,19 @@
 import {configureStore} from '@reduxjs/toolkit';
-import appReducer from './app/appSlice';
-import userReducer from './user/userSlice';
-import localizationReducer from './localization/localizationSlice';
+import {userAPI} from '../services/api/user';
+import {appReducer, appSlice} from './features/app';
+import {authReducer, authSlice} from './features/auth';
 
 export const store = configureStore({
   reducer: {
-    app: appReducer,
-    user: userReducer,
-    localization: localizationReducer,
+    [appSlice.name]: appReducer,
+    [authSlice.name]: authReducer,
+    [userAPI.reducerPath]: userAPI.reducer,
   },
+  middleware: getDefaultMiddleware =>
+    getDefaultMiddleware().concat(userAPI.middleware),
 });
 
-// Infer the `RootState` and `AppDispatch` types from the store itself
+// Infer the `RootState` and `RootDispatch` types from the store itself
 export type RootState = ReturnType<typeof store.getState>;
 // Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}
-export type AppDispatch = typeof store.dispatch;
+export type RootDispatch = typeof store.dispatch;

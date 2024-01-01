@@ -13,29 +13,16 @@ import NonAuthorizedStack from './stacks/non-authorized';
  */
 export let navigationRef = React.createRef<NavigationContainerRef<any>>();
 
-/**
- * Navigate to route by name
- * @param {String} name - name of route
- * @param {Object} params - navigation params
- */
 export const navigate = (name: string, params?: any) => {
   if (navigationRef?.current)
     navigationRef.current.navigate(name, params);
 };
 
-/**
- * Replace route by name
- * @param {String} name - name of route
- * @param {Object} params - navigation params
- */
 export const replace = (name: string, params?: any) => {
   if (navigationRef?.current)
     navigationRef.current.dispatch(StackActions.replace(name, params));
 };
 
-/**
- * Go back in routing
- */
 export const goBack = () => {
   if (navigationRef?.current)
     navigationRef.current.goBack();
@@ -46,7 +33,7 @@ export const goBack = () => {
  */
 const RootNavigation = () => {
   const { isAppReady } = useSelector((store: RootState) => store.app)
-  const { authorized } = useSelector((store: RootState) => store.user)
+  const { authorized } = useSelector((store: RootState) => store.auth)
 
   if (__DEV__ && navigationRef) useFlipper(navigationRef)
 
