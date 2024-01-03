@@ -24,6 +24,8 @@ const loadDataFromLocalStorage = async schema => {
 };
 
 export default function () {
+  let EXPIRATION_PERIOD = 360000;
+
   createServer({
     urlPrefix: 'https://mockserver.com',
     namespace: '/api/v1',
@@ -63,8 +65,12 @@ export default function () {
           email: email.toLowerCase(),
           password,
         });
-        const token = CryptoJS.lib.WordArray.random(64).toString();
-        const newToken = schema.tokens.create({user: newUser, token});
+        const tokens = {
+          access: CryptoJS.lib.WordArray.random(64).toString(),
+          refresh: CryptoJS.lib.WordArray.random(64).toString(),
+          expiry: new Date().getTime() + EXPIRATION_PERIOD,
+        };
+        const newTokens = schema.tokens.create({user: newUser, ...tokens});
 
         await saveDataToLocalStorage(schema);
 
@@ -77,7 +83,7 @@ export default function () {
               username: newUser.attrs.username,
               email: newUser.attrs.email,
             },
-            token: newToken.token,
+            tokens: newTokens,
           },
         );
       });
@@ -102,7 +108,9 @@ export default function () {
           return new Response(401, {}, {error: 'Invalid username or password'});
         }
 
-        const token = schema.tokens.findBy({userId: user.id}).token;
+        const tokens = schema.tokens.findBy({
+          userId: user.id,
+        });
 
         return new Response(
           200,
@@ -113,7 +121,48 @@ export default function () {
               username: user.attrs.username,
               email: user.attrs.email,
             },
-            token,
+            tokens,
+          },
+        );
+      });
+
+      this.post('/users/refresh-token', async (schema, request) => {
+        const {refreshToken} = JSON.parse(request.requestBody);
+
+        if (!refreshToken) {
+          return new Response(
+            400,
+            {},
+            {error: 'refreshToken should not be empty'},
+          );
+        }
+
+        const expiredTokens = schema.tokens.findBy({refresh: refreshToken});
+        if (!expiredTokens) {
+          return new Response(401, {}, {error: 'Invalid refresh token'});
+        }
+
+        const user = schema.users.findBy({id: expiredTokens.userId});
+
+        const tokens = {
+          access: CryptoJS.lib.WordArray.random(64).toString(),
+          refresh: CryptoJS.lib.WordArray.random(64).toString(),
+          expiry: new Date().getTime() + EXPIRATION_PERIOD,
+        };
+
+        const newTokens = schema.tokens.create({
+          user,
+          ...tokens,
+        });
+
+        expiredTokens.destroy();
+
+        await saveDataToLocalStorage(schema);
+        return new Response(
+          200,
+          {},
+          {
+            tokens: newTokens,
           },
         );
       });
