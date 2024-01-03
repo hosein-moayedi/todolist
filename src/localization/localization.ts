@@ -1,88 +1,80 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import STRINGS from './localized-strings';
+import debug from '../utils/debug';
 
 class Localization {
-  /**
-   * Keys for AsyncStorage and others
-   */
-  static #LOCALIZATION_KEYS = {
+  private static LOCALIZATION_KEYS = {
     CURRENT_LANGUAGE: '@localization/current_language',
-  };
+  } as const;
 
-  /**
-   * Available languages in the application
-   */
   static LANGUAGES = {
     en: 'en',
     de: 'de',
-  };
+  } as const;
 
-  /**
-   * Get current language code from async storage
-   * @returns {String}
-   */
-  static async getLanguageFromAsyncStorage() {
+  static async getLanguageFromAsyncStorage(): Promise<
+    keyof typeof Localization.LANGUAGES | null
+  > {
     try {
-      const language = await AsyncStorage.getItem(
-        this.#LOCALIZATION_KEYS.CURRENT_LANGUAGE,
-      );
+      const language = (await AsyncStorage.getItem(
+        Localization.LOCALIZATION_KEYS.CURRENT_LANGUAGE,
+      )) as keyof typeof Localization.LANGUAGES | null;
 
-      if (!language) {
-        return Promise.reject(null);
-      }
-
-      return language;
-    } catch {
-      //
+      return language || null;
+    } catch (error) {
+      debug.error('Error getting language from AsyncStorage:', error);
+      return null;
     }
   }
 
-  /**
-   * Set language code to async storage
-   * @param {String} languageCode - code of the language
-   * @returns {Promise<void>}
-   */
   static async setLanguageToAsyncStorage(
-    languageCode: keyof typeof this.LANGUAGES,
-  ) {
+    languageCode: keyof typeof Localization.LANGUAGES,
+  ): Promise<void> {
     try {
       await AsyncStorage.setItem(
-        this.#LOCALIZATION_KEYS.CURRENT_LANGUAGE,
+        Localization.LOCALIZATION_KEYS.CURRENT_LANGUAGE,
         languageCode,
       );
     } catch (error) {
-      //
+      debug.error('Error setting language to AsyncStorage:', error);
     }
   }
 
-  /**
-   * Clear current language code in async storage
-   * @returns {Promise<void>}
-   */
-  static async clearLanguageInAsyncStorage() {
+  static async clearLanguageInAsyncStorage(): Promise<void> {
     try {
-      await AsyncStorage.removeItem(this.#LOCALIZATION_KEYS.CURRENT_LANGUAGE);
+      await AsyncStorage.removeItem(
+        Localization.LOCALIZATION_KEYS.CURRENT_LANGUAGE,
+      );
     } catch (error) {
-      //
+      debug.error('Error clearing language in AsyncStorage:', error);
     }
   }
 
-  /**
-   * Change language if it exist
-   * @param {String} languageCode - code of the language
-   */
-  static async setLanguage(languageCode: keyof typeof this.LANGUAGES) {
-    if (this.LANGUAGES[languageCode]) {
+  static async setLanguage(
+    languageCode: keyof typeof Localization.LANGUAGES,
+  ): Promise<boolean> {
+    if (Localization.LANGUAGES[languageCode]) {
       try {
-        await this.setLanguageToAsyncStorage(languageCode);
+        await Localization.setLanguageToAsyncStorage(languageCode);
         STRINGS.setLanguage(languageCode);
         return true;
       } catch (error) {
-        return false;
+        debug.error('Error setting language:', error);
       }
     }
     return false;
   }
+
+  static async initialize(): Promise<void> {
+    try {
+      const language =
+        (await Localization.getLanguageFromAsyncStorage()) ||
+        Localization.LANGUAGES.en;
+      await Localization.setLanguage(language);
+    } catch (error) {
+      debug.error('Error initializing Localization:', error);
+    }
+  }
 }
 
-export default Localization
+export default Localization;
