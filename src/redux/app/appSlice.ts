@@ -14,15 +14,15 @@ export const appSlice = createSlice({
   name: 'app',
   initialState,
   reducers: {
-    setCurrentLanguage: (state, action: PayloadAction<string>) => {
+    changeCurrentLanguage: (state, action: PayloadAction<string>) => {
       state.currentLanguage = action.payload;
     },
-    setIsAppReady: (state, action: PayloadAction<boolean>) => {
+    setAppReadyState: (state, action: PayloadAction<boolean>) => {
       state.isAppReady = action.payload;
     },
   },
 });
 
-export const {setCurrentLanguage, setIsAppReady} = appSlice.actions;
+export const {changeCurrentLanguage, setAppReadyState} = appSlice.actions;
 
 export const appReducer = appSlice.reducer;
