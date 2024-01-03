@@ -1,3 +1,4 @@
+export type Tokens = {access: string; refresh: string; expiry: number};
 export interface CreateUserRequestBody {
   username: string;
   email: string;
@@ -9,7 +10,7 @@ export interface CreateUserResponse {
     username: string;
     email: string;
   };
-  token: string;
+  tokens: Tokens;
 }
 
 export interface LoginUserRequestBody {
@@ -22,5 +23,12 @@ export interface LoginUserResponse {
     username: string;
     email: string;
   };
-  token: string;
+  tokens: Tokens;
+}
+
+export interface RefreshTokenRequestBody {
+  refreshToken: string;
+}
+export interface RefreshTokenResponse {
+  tokens: Tokens;
 }

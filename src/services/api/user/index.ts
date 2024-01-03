@@ -6,6 +6,8 @@ import {
   CreateUserResponse,
   LoginUserRequestBody,
   LoginUserResponse,
+  RefreshTokenRequestBody,
+  RefreshTokenResponse,
 } from './types';
 
 export const userAPI = createApi({
@@ -13,9 +15,9 @@ export const userAPI = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: API_URL + '/v1/users',
     prepareHeaders: (headers, {getState}) => {
-      const token = (getState() as RootState).auth.token;
-      if (token) {
-        headers.set('authorization', token);
+      const tokens = (getState() as RootState).auth.tokens;
+      if (tokens) {
+        headers.set('authorization', tokens.access);
       }
       return headers;
     },
@@ -25,17 +27,40 @@ export const userAPI = createApi({
       query: ({username, email, password}) => ({
         url: '/',
         method: 'POST',
-        body: {username, email, password},
+        body: {
+          username,
+          email,
+          password,
+        },
       }),
     }),
     loginUser: builder.mutation<LoginUserResponse, LoginUserRequestBody>({
       query: ({username, password}) => ({
         url: '/login',
         method: 'POST',
-        body: {username, password},
+        body: {
+          username,
+          password,
+        },
+      }),
+    }),
+    refreshToken: builder.mutation<
+      RefreshTokenResponse,
+      RefreshTokenRequestBody
+    >({
+      query: ({refreshToken}) => ({
+        url: '/refresh-token',
+        method: 'POST',
+        body: {
+          refreshToken,
+        },
       }),
     }),
   }),
 });
 
-export const {useCreateUserMutation, useLoginUserMutation} = userAPI;
+export const {
+  useCreateUserMutation,
+  useLoginUserMutation,
+  useRefreshTokenMutation,
+} = userAPI;
