@@ -23,6 +23,12 @@ const loadDataFromLocalStorage = async schema => {
   }
 };
 
+const fakeDelay = (delay: number) => {
+  return new Promise(resolve => {
+    setTimeout(resolve, delay);
+  });
+};
+
 export default function () {
   let EXPIRATION_PERIOD = 360000;
 
@@ -74,6 +80,8 @@ export default function () {
 
         await saveDataToLocalStorage(schema);
 
+        await fakeDelay(2000);
+        
         return new Response(
           200,
           {},
@@ -111,6 +119,8 @@ export default function () {
         const tokens = schema.tokens.findBy({
           userId: user.id,
         });
+
+        await fakeDelay(2000);
 
         return new Response(
           200,
