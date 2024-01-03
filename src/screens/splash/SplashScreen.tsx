@@ -7,6 +7,7 @@ import STRINGS from '../../localization'
 import { setAppReadyState } from '../../redux/app'
 import { setAuthorizedState, setTokensState } from '../../redux/auth'
 import { useRefreshTokenMutation } from '../../services/api/user'
+import debug from '../../utils/debug'
 import { styles } from './styles'
 
 
@@ -26,13 +27,13 @@ export default function SplashScreen() {
                         const newTokens = await refreshTokenAPI({ refreshToken: tokens.refresh }).unwrap()
                         await Keychain.setGenericPassword(credentials.username, JSON.stringify(newTokens.tokens))
                     }
-                    
+
                     dispatch(setTokensState(tokens))
                     dispatch(setAuthorizedState(true))
                 }
-                dispatch(setAppReadyState(true))
+                setTimeout(() => dispatch(setAppReadyState(true)), 1000)
             } catch (error) {
-                console.log(error);
+                debug.error(error);
                 await Keychain.resetGenericPassword()
                 RNRestart.restart()
             }

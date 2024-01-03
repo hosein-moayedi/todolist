@@ -10,6 +10,7 @@ import { baseSchemas, emailErrors, passwordErrors, usernameErrors } from '../../
 import { useCreateUserMutation } from '../../services/api/user';
 import { styles } from './styles';
 import { Values } from './types';
+import debug from '../../utils/debug';
 
 
 
@@ -39,7 +40,7 @@ export default function RegisterScreen() {
                 RNRestart.restart()
             }
         } catch (error) {
-            console.log(error);
+            debug.error(error);
         }
     };
 

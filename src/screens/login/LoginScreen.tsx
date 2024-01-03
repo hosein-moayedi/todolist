@@ -10,6 +10,7 @@ import { baseSchemas, passwordErrors, usernameErrors } from '../../schema/base-s
 import { useLoginUserMutation } from '../../services/api/user';
 import { styles } from './styles';
 import { Values } from './types';
+import debug from '../../utils/debug';
 
 
 
@@ -37,7 +38,7 @@ export default function LoginScreen() {
                 RNRestart.restart()
             }
         } catch (error) {
-            console.log(error);
+            debug.error(error);
         }
     };
 
