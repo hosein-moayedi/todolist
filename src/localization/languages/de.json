@@ -6,11 +6,13 @@
         },
         "register": {
             "Register": "Registrieren",
-            "Submit": "Einreichen"
+            "Submit": "Einreichen",
+            "ErrorMessage": "Fehlermeldung"
         },
         "login": {
             "Login": "Anmeldung",
-            "Submit": "Einreichen"
+            "Submit": "Einreichen",
+            "ErrorMessage": "Fehlermeldung"
         },
         "home": {
             "HomeScreen": "Startbildschirm",
@@ -36,5 +38,22 @@
                 "Required": "Erforderlich"
             }
         }
+    },
+    "errors": {
+        "server": {
+            "default": {
+                "ErrorMessage": "Fehlermeldung",
+                "AccessDenied": "Zugriff verweigert",
+                "DoNotHavePermission": "Sie haben keine Berechtigung",
+                "ResourceNotFound": "Ressource nicht gefunden",
+                "RequestedResourceNotFoundPleaseTryAgain": "Die angeforderte Ressource wurde nicht gefunden. Bitte überprüfen Sie Ihre Anfrage und versuchen Sie es erneut.",
+                "SomethingWentWrong": "Etwas ist schiefgelaufen",
+                "SomethingWrongTryAgainLater": "Entschuldigung, etwas ist auf unserer Seite schiefgegangen. Bitte versuchen Sie es später erneut.",
+                "UnknownError": "Unbekannter Fehler"
+            }
+        }
+    },
+    "alertButtons": {
+        "Login": "Anmelden"
     }
 }

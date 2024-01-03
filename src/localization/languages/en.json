@@ -6,11 +6,13 @@
         },
         "register": {
             "Register": "Register",
-            "Submit": "Submit"
+            "Submit": "Submit",
+            "ErrorMessage": "Error Message"
         },
         "login": {
             "Login": "Login",
-            "Submit": "Submit"
+            "Submit": "Submit",
+            "ErrorMessage": "Error Message"
         },
         "home": {
             "HomeScreen": "Home Screen",
@@ -36,5 +38,22 @@
                 "Required": "Required"
             }
         }
+    },
+    "errors": {
+        "server": {
+            "default": {
+                "ErrorMessage": "Error Message",
+                "AccessDenied": "Access Denied",
+                "DoNotHavePermission": "You don't have permission",
+                "ResourceNotFound": "Resource Not Found",
+                "RequestedResourceNotFoundPleaseTryAgain": "Requested resource not found. Please check your request and try again.",
+                "SomethingWentWrong": "Something went Wrong",
+                "SomethingWrongTryAgainLater": "Sorry, something went wrong on our end. Please try again later.",
+                "UnknownError": "Unknown Error"
+            }
+        }
+    },
+    "alertButtons": {
+        "Login": "login"
     }
 }
