@@ -21,11 +21,12 @@ export default function SplashScreen() {
                 if (credentials) {
                     const tokens = await JSON.parse(credentials.password)
                     const nowTime = new Date().getTime()
-                    console.log(tokens.expiry, nowTime);
+
                     if (tokens.expiry <= nowTime) {
                         const newTokens = await refreshTokenAPI({ refreshToken: tokens.refresh }).unwrap()
                         await Keychain.setGenericPassword(credentials.username, JSON.stringify(newTokens.tokens))
                     }
+                    
                     dispatch(setTokensState(tokens))
                     dispatch(setAuthorizedState(true))
                 }
