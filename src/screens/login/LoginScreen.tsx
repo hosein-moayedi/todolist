@@ -1,13 +1,12 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useFormik } from 'formik';
 import React from 'react';
-import { ActivityIndicator, Alert, Button, KeyboardAvoidingView, Platform, Text, TextInput } from 'react-native';
+import { ActivityIndicator, Button, KeyboardAvoidingView, Platform, Text, TextInput } from 'react-native';
 import * as Keychain from 'react-native-keychain';
 import RNRestart from 'react-native-restart';
 import * as Yup from 'yup';
 import STRINGS from '../../localization';
 import { baseSchemas, passwordErrors, usernameErrors } from '../../schema/base-schemas';
-import { getErrorMessage } from '../../services/api/helpers';
 import { useLoginUserMutation } from '../../services/api/user';
 import { styles } from './styles';
 import { Values } from './types';
@@ -21,7 +20,7 @@ const LoginSchema = Yup.object().shape({
 
 export default function LoginScreen() {
     const [loginWithCredentialAPI, { isLoading, error }] = useLoginUserMutation();
-    const { values, handleSubmit, handleChange, handleBlur } = useFormik<Values>({
+    const { values: { username, password }, handleSubmit, handleChange, handleBlur } = useFormik<Values>({
         initialValues: {
             username: '',
             password: '',
@@ -30,16 +29,15 @@ export default function LoginScreen() {
         onSubmit
     })
 
-    async function onSubmit(values: Values) {
+    async function onSubmit() {
         try {
-            const response = await loginWithCredentialAPI(values).unwrap();
-            if (response.token) {
-                await Keychain.setGenericPassword(values.username, response.token);
+            const response = await loginWithCredentialAPI({ username, password }).unwrap();
+            if (response.tokens) {
+                await Keychain.setGenericPassword(username, JSON.stringify(response.tokens));
                 RNRestart.restart()
             }
         } catch (error) {
             console.log(error);
-            Alert.alert("User Existed", getErrorMessage(error))
         }
     };
 
@@ -52,14 +50,14 @@ export default function LoginScreen() {
                 {STRINGS.screens.login.Login}
             </Text>
             <TextInput
-                value={values.username}
+                value={username}
                 onChangeText={handleChange('username')}
                 onBlur={handleBlur('username')}
                 placeholder='Username'
                 style={styles.input}
             />
             <TextInput
-                value={values.password}
+                value={password}
                 onChangeText={handleChange('password')}
                 onBlur={handleBlur('password')}
                 placeholder='Password'
