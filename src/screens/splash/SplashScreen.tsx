@@ -1,27 +1,40 @@
 import React, { useEffect } from 'react'
 import { Text, View } from 'react-native'
 import * as Keychain from 'react-native-keychain'
+import RNRestart from 'react-native-restart'
 import { useDispatch } from 'react-redux'
 import STRINGS from '../../localization'
-import { setIsAppReady } from '../../redux/features/app'
-import { setAuthorized, setToken } from '../../redux/features/auth'
+import { setAppReadyState } from '../../redux/app'
+import { setAuthorizedState, setTokensState } from '../../redux/auth'
+import { useRefreshTokenMutation } from '../../services/api/user'
 import { styles } from './styles'
 
 
 export default function SplashScreen() {
     const dispatch = useDispatch()
+    const [refreshTokenAPI,] = useRefreshTokenMutation()
 
     useEffect(() => {
         (async () => {
-            const credentials = await Keychain.getGenericPassword()
-            console.log('credentials: ', credentials);
-
-            if (credentials) {
-
-                dispatch(setToken(credentials.password))
-                dispatch(setAuthorized(true))
+            try {
+                const credentials = await Keychain.getGenericPassword()
+                if (credentials) {
+                    const tokens = await JSON.parse(credentials.password)
+                    const nowTime = new Date().getTime()
+                    console.log(tokens.expiry, nowTime);
+                    if (tokens.expiry <= nowTime) {
+                        const newTokens = await refreshTokenAPI({ refreshToken: tokens.refresh }).unwrap()
+                        await Keychain.setGenericPassword(credentials.username, JSON.stringify(newTokens.tokens))
+                    }
+                    dispatch(setTokensState(tokens))
+                    dispatch(setAuthorizedState(true))
+                }
+                dispatch(setAppReadyState(true))
+            } catch (error) {
+                console.log(error);
+                await Keychain.resetGenericPassword()
+                RNRestart.restart()
             }
-            dispatch(setIsAppReady(true))
         })()
     }, [])
 
