@@ -7,7 +7,8 @@
         "register": {
             "Register": "Register",
             "Submit": "Submit",
-            "ErrorMessage": "Error Message"
+            "ErrorMessage": "Error Message",
+            "Login": "Login"
         },
         "login": {
             "Login": "Login",

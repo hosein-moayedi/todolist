@@ -1,6 +1,6 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import STRINGS from './localized-strings';
 import debug from '../utils/debug';
+import STRINGS from './localized-strings';
 
 class Localization {
   private static LOCALIZATION_KEYS = {
