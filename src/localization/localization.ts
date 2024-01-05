@@ -2,33 +2,33 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import debug from '../utils/debug';
 import STRINGS from './localized-strings';
 
+type Language = 'en' | 'de';
+
 class Localization {
   private static LOCALIZATION_KEYS = {
     CURRENT_LANGUAGE: '@localization/current_language',
   } as const;
 
-  static LANGUAGES = {
+  static LANGUAGES: Record<Language, Language> = {
     en: 'en',
     de: 'de',
-  } as const;
+  };
 
-  static async getLanguageFromAsyncStorage(): Promise<
-    keyof typeof Localization.LANGUAGES | null
-  > {
+  static async getLanguageFromAsyncStorage(): Promise<Language | null> {
     try {
       const language = (await AsyncStorage.getItem(
         Localization.LOCALIZATION_KEYS.CURRENT_LANGUAGE,
-      )) as keyof typeof Localization.LANGUAGES | null;
+      )) as Language | null;
 
-      return language || null;
+      return language;
     } catch (error) {
       debug.error('Error getting language from AsyncStorage:', error);
-      return null;
+      throw error;
     }
   }
 
   static async setLanguageToAsyncStorage(
-    languageCode: keyof typeof Localization.LANGUAGES,
+    languageCode: Language,
   ): Promise<void> {
     try {
       await AsyncStorage.setItem(
@@ -37,6 +37,7 @@ class Localization {
       );
     } catch (error) {
       debug.error('Error setting language to AsyncStorage:', error);
+      throw error;
     }
   }
 
@@ -47,12 +48,11 @@ class Localization {
       );
     } catch (error) {
       debug.error('Error clearing language in AsyncStorage:', error);
+      throw error;
     }
   }
 
-  static async setLanguage(
-    languageCode: keyof typeof Localization.LANGUAGES,
-  ): Promise<boolean> {
+  static async setLanguage(languageCode: Language): Promise<boolean> {
     if (Localization.LANGUAGES[languageCode]) {
       try {
         await Localization.setLanguageToAsyncStorage(languageCode);
@@ -60,6 +60,7 @@ class Localization {
         return true;
       } catch (error) {
         debug.error('Error setting language:', error);
+        throw error;
       }
     }
     return false;
@@ -73,6 +74,7 @@ class Localization {
       await Localization.setLanguage(language);
     } catch (error) {
       debug.error('Error initializing Localization:', error);
+      throw error;
     }
   }
 }
