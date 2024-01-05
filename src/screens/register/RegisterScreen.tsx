@@ -8,9 +8,9 @@ import STRINGS from '../../localization';
 import { navigate } from '../../navigation/RootNavigator';
 import { baseSchemas, emailErrors, passwordErrors, usernameErrors } from '../../schema/base-schemas';
 import { useCreateUserMutation } from '../../services/api/user';
+import debug from '../../utils/debug';
 import { styles } from './styles';
 import { Values } from './types';
-import debug from '../../utils/debug';
 
 
 
@@ -83,7 +83,7 @@ export default function RegisterScreen() {
                     />
             }
             <Button
-                title={'login'}
+                title={STRINGS.screens.register.Login}
                 onPress={() => navigate('LoginScreen')}
             />
         </KeyboardAvoidingView>

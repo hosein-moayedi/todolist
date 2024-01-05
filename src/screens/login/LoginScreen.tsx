@@ -8,9 +8,9 @@ import * as Yup from 'yup';
 import STRINGS from '../../localization';
 import { baseSchemas, passwordErrors, usernameErrors } from '../../schema/base-schemas';
 import { useLoginUserMutation } from '../../services/api/user';
+import debug from '../../utils/debug';
 import { styles } from './styles';
 import { Values } from './types';
-import debug from '../../utils/debug';
 
 
 
