@@ -2,7 +2,7 @@ import {configureStore} from '@reduxjs/toolkit';
 import {userAPI} from '../services/api/user';
 import {appReducer, appSlice} from './app';
 import {authReducer, authSlice} from './auth';
-import {rtkQueryGlobalErrorHandlerMiddleware} from './middlewares';
+import {handleRTKQueryGlobalErrorMiddleware} from './middlewares';
 
 export const store = configureStore({
   reducer: {
@@ -13,7 +13,7 @@ export const store = configureStore({
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware().concat(
       userAPI.middleware,
-      rtkQueryGlobalErrorHandlerMiddleware,
+      handleRTKQueryGlobalErrorMiddleware,
     ),
 });
 
