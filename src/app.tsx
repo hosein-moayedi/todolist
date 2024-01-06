@@ -5,30 +5,28 @@ import { Localization } from './localization';
 import RootNavigation from './navigation/RootNavigator';
 import debug from './utils/debug';
 
-
-function App() {
+const App = () => {
   const [languageIsReady, setLanguageIsReady] = useState(false);
 
   useEffect(() => {
-    (async () => {
+    const initializeLanguage = async () => {
       try {
         await Localization.initialize();
         setLanguageIsReady(true);
       } catch (error) {
         debug.error('Error initializing app language:', error);
       }
-    })();
-  }, []);
+    };
 
+    initializeLanguage();
+  }, []);
 
   return (
     <SafeAreaView style={styles.safeAreaContainer}>
-      {languageIsReady && (
-        <RootNavigation />
-      )}
+      {languageIsReady && <RootNavigation />}
     </SafeAreaView>
   );
-}
+};
 
 const styles = StyleSheet.create({
   safeAreaContainer: {
