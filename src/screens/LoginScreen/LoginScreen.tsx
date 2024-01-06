@@ -1,40 +1,39 @@
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useFormik } from 'formik';
 import React from 'react';
-import { ActivityIndicator, Button, KeyboardAvoidingView, Platform, Text, TextInput } from 'react-native';
+import { ActivityIndicator, Button, Text, TextInput } from 'react-native';
 import * as Keychain from 'react-native-keychain';
 import RNRestart from 'react-native-restart';
 import * as Yup from 'yup';
+import { CustomKeyboardAvoidingView } from '../../components';
 import STRINGS from '../../localization';
-import { navigate } from '../../navigation/RootNavigator';
-import { baseSchemas, emailErrors, passwordErrors, usernameErrors } from '../../schema/base-schemas';
-import { useCreateUserMutation } from '../../services/api/user';
+import { baseSchemas, passwordErrors, usernameErrors } from '../../schema/base-schemas';
+import { useLoginUserMutation } from '../../services/api/user';
 import debug from '../../utils/debug';
 import { styles } from './styles';
 import { Values } from './types';
 
 
 
-const RegisterSchema = Yup.object().shape({
+const LoginSchema = Yup.object().shape({
     username: baseSchemas.username.required(usernameErrors.Required),
-    email: baseSchemas.email.required(emailErrors.Required),
     password: baseSchemas.password.required(passwordErrors.Required),
 })
 
-export default function RegisterScreen() {
-    const [createUserAPI, { isLoading }] = useCreateUserMutation();
-    const { values: { username, email, password }, handleSubmit, handleChange, handleBlur } = useFormik<Values>({
+export default function LoginScreen() {
+    const [loginWithCredentialAPI, { isLoading, error }] = useLoginUserMutation();
+    const { values: { username, password }, handleSubmit, handleChange, handleBlur } = useFormik<Values>({
         initialValues: {
             username: '',
-            email: '',
             password: '',
         },
-        validationSchema: RegisterSchema,
+        validationSchema: LoginSchema,
         onSubmit
     })
 
     async function onSubmit() {
         try {
-            const response = await createUserAPI({ username, email, password }).unwrap();
+            const response = await loginWithCredentialAPI({ username, password }).unwrap();
             if (response.tokens) {
                 await Keychain.setGenericPassword(username, JSON.stringify(response.tokens));
                 RNRestart.restart()
@@ -45,25 +44,15 @@ export default function RegisterScreen() {
     };
 
     return (
-        <KeyboardAvoidingView
-            behavior={Platform.OS == 'ios' ? 'height' : 'padding'}
-            style={styles.viewContainer}
-        >
+        <CustomKeyboardAvoidingView>
             <Text style={styles.textMessage}>
-                {STRINGS.screens.register.Register}
+                {STRINGS.screens.login.Login}
             </Text>
             <TextInput
                 value={username}
                 onChangeText={handleChange('username')}
                 onBlur={handleBlur('username')}
                 placeholder='Username'
-                style={styles.input}
-            />
-            <TextInput
-                value={email}
-                onChangeText={handleChange('email')}
-                onBlur={handleBlur('email')}
-                placeholder='Email'
                 style={styles.input}
             />
             <TextInput
@@ -78,15 +67,16 @@ export default function RegisterScreen() {
                 isLoading ?
                     <ActivityIndicator /> :
                     <Button
-                        title={STRINGS.screens.register.Submit}
+                        title={STRINGS.screens.login.Submit}
                         onPress={() => handleSubmit()}
                     />
             }
             <Button
-                title={STRINGS.screens.register.Login}
-                onPress={() => navigate('LoginScreen')}
+                title={'Clean Database'}
+                onPress={() => AsyncStorage.clear()}
             />
-        </KeyboardAvoidingView>
+            {error && 'status' in error ? <Text>{JSON.stringify(error.data)}</Text> : <Text>{error?.message}</Text>}
+        </CustomKeyboardAvoidingView>
     )
 }
 

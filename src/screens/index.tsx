@@ -1,4 +1,4 @@
-export { default as SplashScreen } from './splash/SplashScreen'
-export { default as RegisterScreen } from './register/RegisterScreen'
-export { default as LoginScreen } from './login/LoginScreen'
-export { default as HomeScreen } from './home/HomeScreen'
+export { default as SplashScreen } from './SplashScreen/SplashScreen'
+export { default as RegisterScreen } from './RegisterScreen/RegisterScreen'
+export { default as LoginScreen } from './LoginScreen/LoginScreen'
+export { default as HomeScreen } from './HomeScreen/HomeScreen'
