@@ -1,6 +1,7 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
 import * as SCREENS from '../../../screens';
+import { defaultScreenOptions } from '../../utils/common-screen-options';
 
 
 const NonAuthorizedScreensStack = createNativeStackNavigator();
@@ -20,16 +21,15 @@ const NonAuthorizedStack = () => {
   return (
     <NonAuthorizedScreensStack.Navigator
       initialRouteName={NON_AUTHORIZED_SCREEN_STACK.RegisterScreen.name}
+      screenOptions={defaultScreenOptions}
     >
       <NonAuthorizedScreensStack.Screen
         name={NON_AUTHORIZED_SCREEN_STACK.RegisterScreen.name}
         component={NON_AUTHORIZED_SCREEN_STACK.RegisterScreen.component}
-        options={{ headerShown: false }}
       />
       <NonAuthorizedScreensStack.Screen
         name={NON_AUTHORIZED_SCREEN_STACK.LoginScreen.name}
         component={NON_AUTHORIZED_SCREEN_STACK.LoginScreen.component}
-        options={{ headerShown: false }}
       />
     </NonAuthorizedScreensStack.Navigator>
   );
