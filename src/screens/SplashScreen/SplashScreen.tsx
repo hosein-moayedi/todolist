@@ -43,12 +43,10 @@ const SplashScreen: FC = () => {
     };
 
     useEffect(() => {
-        const fetchData = async () => {
+        (async () => {
             await handleTokenRefresh();
             handleAppReady();
-        };
-
-        fetchData();
+        })();
     }, []);
 
     return (
