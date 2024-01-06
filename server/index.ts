@@ -113,7 +113,7 @@ export default function () {
         });
 
         if (!user) {
-          return new Response(401, {}, {error: 'Invalid username or password'});
+          return new Response(400, {}, {error: 'Invalid username or password'});
         }
 
         const tokens = schema.tokens.findBy({
