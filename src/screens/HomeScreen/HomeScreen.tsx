@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { Button, Text, View } from 'react-native';
-import * as Keychain from 'react-native-keychain';
+import Keychain from 'react-native-keychain';
 import RNRestart from 'react-native-restart';
 import STRINGS from '../../localization';
 import { styles } from './styles';
 
 
-export default function HomeScreen() {
+const HomeScreen: FC = () => {
 
     const onLogoutButtonPress = async () => {
         await Keychain.resetGenericPassword()
@@ -23,3 +23,5 @@ export default function HomeScreen() {
         </View>
     )
 }
+
+export default HomeScreen

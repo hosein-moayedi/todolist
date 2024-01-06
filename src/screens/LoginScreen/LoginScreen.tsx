@@ -1,8 +1,8 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useFormik } from 'formik';
-import React from 'react';
+import React, { FC } from 'react';
 import { ActivityIndicator, Button, Text, TextInput } from 'react-native';
-import * as Keychain from 'react-native-keychain';
+import Keychain from 'react-native-keychain';
 import RNRestart from 'react-native-restart';
 import * as Yup from 'yup';
 import { CustomKeyboardAvoidingView } from '../../components';
@@ -20,7 +20,7 @@ const LoginSchema = Yup.object().shape({
     password: baseSchemas.password.required(passwordErrors.Required),
 })
 
-export default function LoginScreen() {
+const LoginScreen: FC = () => {
     const [loginWithCredentialAPI, { isLoading, error }] = useLoginUserMutation();
     const { values: { username, password }, handleSubmit, handleChange, handleBlur } = useFormik<Values>({
         initialValues: {
@@ -80,6 +80,7 @@ export default function LoginScreen() {
     )
 }
 
+export default LoginScreen
 
 
 

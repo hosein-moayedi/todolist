@@ -1,7 +1,7 @@
 import { useFormik } from 'formik';
-import React from 'react';
+import React, { FC } from 'react';
 import { ActivityIndicator, Button, Text, TextInput } from 'react-native';
-import * as Keychain from 'react-native-keychain';
+import Keychain from 'react-native-keychain';
 import RNRestart from 'react-native-restart';
 import * as Yup from 'yup';
 import { CustomKeyboardAvoidingView } from '../../components';
@@ -21,7 +21,7 @@ const RegisterSchema = Yup.object().shape({
     password: baseSchemas.password.required(passwordErrors.Required),
 })
 
-export default function RegisterScreen() {
+const RegisterScreen: FC = () => {
     const [createUserAPI, { isLoading }] = useCreateUserMutation();
     const { values: { username, email, password }, handleSubmit, handleChange, handleBlur } = useFormik<Values>({
         initialValues: {
@@ -88,7 +88,4 @@ export default function RegisterScreen() {
     )
 }
 
-
-
-
-
+export default RegisterScreen
