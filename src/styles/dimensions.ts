@@ -3,7 +3,7 @@
  * @perfect - PS
  */
 
-import { Dimensions } from 'react-native';
+import {Dimensions} from 'react-native';
 
 const WINDOW = Dimensions.get('window');
 

@@ -34,22 +34,22 @@ export function processServerResponseErrors(action) {
     const {status} = action.payload;
     if (status >= 400) {
       switch (true) {
-        case status == 400:
+        case status === 400:
           Alert.alert(
             STRINGS.errors.server.default.ErrorMessage,
             getErrorMessage(action.payload),
           );
           break;
-        case status == 401:
+        case status === 401:
           RNRestart.restart();
           break;
-        case status == 403:
+        case status === 403:
           Alert.alert(
             STRINGS.errors.server.default.AccessDenied,
             STRINGS.errors.server.default.DoNotHavePermission,
           );
           break;
-        case status == 404:
+        case status === 404:
           Alert.alert(
             STRINGS.errors.server.default.ResourceNotFound,
             STRINGS.errors.server.default

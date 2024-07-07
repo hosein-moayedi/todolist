@@ -1,18 +1,21 @@
+import {ThemeProvider} from '@rneui/themed';
 import React from 'react';
-import { Provider } from 'react-redux';
+import {useColorScheme} from 'react-native';
+import {Provider} from 'react-redux';
 import App from './app';
-import { store } from './redux/store';
+import {store} from './redux/store';
+import {appTheme} from './styles';
 
-/**
- * Providing by redux provider
- */
 const Root = () => {
-    return (
-        <Provider store={store}>
-            <App />
-        </Provider>
-    );
-};
+  appTheme.mode = useColorScheme() || 'light';
 
+  return (
+    <ThemeProvider theme={appTheme}>
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </ThemeProvider>
+  );
+};
 
 export default Root;

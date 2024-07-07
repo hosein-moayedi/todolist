@@ -2,11 +2,10 @@
  * @format
  */
 
-import { AppRegistry } from 'react-native';
+import {AppRegistry} from 'react-native';
+import {name as appName} from './app.json';
 import mockServer from './server';
-import { name as appName } from './app.json';
 import Root from './src';
 
-
-mockServer()
+mockServer();
 AppRegistry.registerComponent(appName, () => Root);

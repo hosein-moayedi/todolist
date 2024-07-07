@@ -629,11 +629,7 @@
     "iso2": "DO",
     "dialCode": "1",
     "priority": 2,
-    "areaCodes": [
-      "809",
-      "829",
-      "849"
-    ],
+    "areaCodes": ["809", "829", "849"],
     "iso3": "DOM"
   },
   "ECU": {
@@ -1703,10 +1699,7 @@
     "iso2": "PR",
     "dialCode": "1",
     "priority": 3,
-    "areaCodes": [
-      "787",
-      "939"
-    ],
+    "areaCodes": ["787", "939"],
     "iso3": "PRI"
   },
   "QAT": {

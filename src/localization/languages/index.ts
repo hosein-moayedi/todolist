@@ -3,7 +3,7 @@ import {default as de} from './de.json';
 
 const languages = {
   en,
-  de
+  de,
 };
 
 export default languages;

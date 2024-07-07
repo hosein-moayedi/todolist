@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import { StyleSheet } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
-import { Localization } from './localization';
+import React, {useEffect, useState} from 'react';
+import {StyleSheet} from 'react-native';
+import {SafeAreaView} from 'react-native-safe-area-context';
+import {Localization} from './localization';
 import RootNavigation from './navigation/RootNavigator';
 import debug from './utils/debug';
 

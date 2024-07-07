@@ -81,7 +81,7 @@ export default function () {
         await saveDataToLocalStorage(schema);
 
         await fakeDelay(2000);
-        
+
         return new Response(
           200,
           {},

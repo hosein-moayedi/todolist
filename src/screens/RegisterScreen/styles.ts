@@ -11,9 +11,6 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
   textMessage: {
-    width: '70%',
-    fontSize: 20,
-    fontWeight: 'bold',
     marginVertical: 20,
   },
 });

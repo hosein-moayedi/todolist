@@ -1,60 +1,61 @@
 {
-    "screens": {
-        "splash": {
-            "AppName": "Aufgabenliste",
-            "SplashScreen": "Begrüßungsbildschirm"
-        },
-        "register": {
-            "Register": "Registrieren",
-            "Submit": "Einreichen",
-            "ErrorMessage": "Fehlermeldung",
-            "Login": "Anmeldung"
-        },
-        "login": {
-            "Login": "Anmeldung",
-            "Submit": "Einreichen",
-            "ErrorMessage": "Fehlermeldung"
-        },
-        "home": {
-            "HomeScreen": "Startbildschirm",
-            "Logout": "Ausloggen"
-        }
+  "screens": {
+    "splash": {
+      "AppName": "Aufgabenliste",
+      "SplashScreen": "Begrüßungsbildschirm"
     },
-    "schema": {
-        "baseSchema": {
-            "username": {
-                "Invalid": "Ungültiger Benutzername",
-                "MinLength": "Benutzername muss mindestens {min} Zeichen lang sein",
-                "MaxLength": "Benutzername darf nicht länger als {max} Zeichen sein",
-                "Required": "Erforderlich"
-            },
-            "email": {
-                "Invalid": "Ungültige E-Mail-Adresse",
-                "Required": "Erforderlich"
-            },
-            "password": {
-                "MinLength": "Passwort muss mindestens {min} Zeichen lang sein",
-                "MaxLength": "Passwort darf nicht länger als {max} Zeichen sein",
-                "Complexity": "Passwort muss mindestens einen Großbuchstaben, einen Kleinbuchstaben und eine Zahl enthalten",
-                "Required": "Erforderlich"
-            }
-        }
+    "register": {
+      "Register": "Registrieren",
+      "Submit": "Einreichen",
+      "ErrorMessage": "Fehlermeldung",
+      "Login": "Anmeldung"
     },
-    "errors": {
-        "server": {
-            "default": {
-                "ErrorMessage": "Fehlermeldung",
-                "AccessDenied": "Zugriff verweigert",
-                "DoNotHavePermission": "Sie haben keine Berechtigung",
-                "ResourceNotFound": "Ressource nicht gefunden",
-                "RequestedResourceNotFoundPleaseTryAgain": "Die angeforderte Ressource wurde nicht gefunden. Bitte überprüfen Sie Ihre Anfrage und versuchen Sie es erneut.",
-                "SomethingWentWrong": "Etwas ist schiefgelaufen",
-                "SomethingWrongTryAgainLater": "Entschuldigung, etwas ist auf unserer Seite schiefgegangen. Bitte versuchen Sie es später erneut.",
-                "UnknownError": "Unbekannter Fehler"
-            }
-        }
+    "login": {
+      "Login": "Anmeldung",
+      "Submit": "Einreichen",
+      "Register": "Registrieren",
+      "ErrorMessage": "Fehlermeldung"
     },
-    "alertButtons": {
-        "Login": "Anmelden"
+    "home": {
+      "HomeScreen": "Startbildschirm",
+      "Logout": "Ausloggen"
     }
+  },
+  "schema": {
+    "baseSchema": {
+      "username": {
+        "Invalid": "Ungültiger Benutzername",
+        "MinLength": "Benutzername muss mindestens {min} Zeichen lang sein",
+        "MaxLength": "Benutzername darf nicht länger als {max} Zeichen sein",
+        "Required": "Erforderlich"
+      },
+      "email": {
+        "Invalid": "Ungültige E-Mail-Adresse",
+        "Required": "Erforderlich"
+      },
+      "password": {
+        "MinLength": "Passwort muss mindestens {min} Zeichen lang sein",
+        "MaxLength": "Passwort darf nicht länger als {max} Zeichen sein",
+        "Complexity": "Passwort muss mindestens einen Großbuchstaben, einen Kleinbuchstaben und eine Zahl enthalten",
+        "Required": "Erforderlich"
+      }
+    }
+  },
+  "errors": {
+    "server": {
+      "default": {
+        "ErrorMessage": "Fehlermeldung",
+        "AccessDenied": "Zugriff verweigert",
+        "DoNotHavePermission": "Sie haben keine Berechtigung",
+        "ResourceNotFound": "Ressource nicht gefunden",
+        "RequestedResourceNotFoundPleaseTryAgain": "Die angeforderte Ressource wurde nicht gefunden. Bitte überprüfen Sie Ihre Anfrage und versuchen Sie es erneut.",
+        "SomethingWentWrong": "Etwas ist schiefgelaufen",
+        "SomethingWrongTryAgainLater": "Entschuldigung, etwas ist auf unserer Seite schiefgegangen. Bitte versuchen Sie es später erneut.",
+        "UnknownError": "Unbekannter Fehler"
+      }
+    }
+  },
+  "alertButtons": {
+    "Login": "Anmelden"
+  }
 }

@@ -3,4 +3,4 @@ import STRINGS from './localized-strings';
 
 export default STRINGS;
 
-export { Localization };
+export {Localization};

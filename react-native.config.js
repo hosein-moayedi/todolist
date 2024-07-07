@@ -1,10 +1,11 @@
 module.exports = {
   project: {
     ios: {
-      automaticPodsInstallation: true
-    }
+      automaticPodsInstallation: true,
+    },
   },
   assets: [
     './src/assets/fonts/Montserrat/',
+    './node_modules/react-native-vector-icons/Fonts',
   ],
-}
+};
