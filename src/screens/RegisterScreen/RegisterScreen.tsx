@@ -17,7 +17,6 @@ import {
 import {useCreateUserMutation} from '../../services/api/user';
 import debug from '../../utils/debug';
 import {styles} from './RegisterScreen.styles';
-import {Values} from './types';
 
 export interface Values {
   username: string;

@@ -16,7 +16,6 @@ import {
 import {useLoginUserMutation} from '../../services/api/user';
 import debug from '../../utils/debug';
 import {styles} from './LoginScreen.styles';
-import {Values} from './types';
 
 export interface Values {
   username: string;
