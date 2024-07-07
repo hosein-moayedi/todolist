@@ -1,5 +1,6 @@
+import {Text} from '@rneui/themed';
 import React, {FC, useCallback, useEffect} from 'react';
-import {Text, View} from 'react-native';
+import {View} from 'react-native';
 import Keychain from 'react-native-keychain';
 import RNRestart from 'react-native-restart';
 import {useDispatch} from 'react-redux';
@@ -8,7 +9,7 @@ import {setAppReadyState} from '../../redux/app';
 import {setAuthorizedState, setTokensState} from '../../redux/auth';
 import {useRefreshTokenMutation} from '../../services/api/user';
 import debug from '../../utils/debug';
-import {styles} from './styles';
+import {styles} from './SplashScreen.styles';
 
 const SplashScreen: FC = () => {
   const dispatch = useDispatch();

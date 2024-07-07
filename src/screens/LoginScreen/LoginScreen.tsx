@@ -15,8 +15,13 @@ import {
 } from '../../schema/base-schemas';
 import {useLoginUserMutation} from '../../services/api/user';
 import debug from '../../utils/debug';
-import {styles} from './styles';
+import {styles} from './LoginScreen.styles';
 import {Values} from './types';
+
+export interface Values {
+  username: string;
+  password: string;
+}
 
 const LoginSchema = Yup.object().shape({
   username: baseSchemas.username.required(usernameErrors.Required),

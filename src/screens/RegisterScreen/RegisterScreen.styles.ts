@@ -1,6 +1,11 @@
 import {StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
+  inputContainer: {
+    width: '90%',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   input: {
     width: 300,
     height: 40,

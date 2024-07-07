@@ -3,7 +3,7 @@ import {Button, Text, View} from 'react-native';
 import Keychain from 'react-native-keychain';
 import RNRestart from 'react-native-restart';
 import STRINGS from '../../localization';
-import {styles} from './styles';
+import {styles} from './HomeScreen.styles';
 
 const HomeScreen: FC = () => {
   const onLogoutButtonPress = async () => {

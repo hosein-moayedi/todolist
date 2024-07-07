@@ -5,7 +5,7 @@ import {View} from 'react-native';
 import Keychain from 'react-native-keychain';
 import RNRestart from 'react-native-restart';
 import * as Yup from 'yup';
-import {CustomKeyboardAvoidingView} from '../../components';
+import {CustomKeyboardAvoidingView, Space} from '../../components';
 import STRINGS from '../../localization';
 import {navigate} from '../../navigation/RootNavigator';
 import {
@@ -16,8 +16,14 @@ import {
 } from '../../schema/base-schemas';
 import {useCreateUserMutation} from '../../services/api/user';
 import debug from '../../utils/debug';
-import {styles} from './styles';
+import {styles} from './RegisterScreen.styles';
 import {Values} from './types';
+
+export interface Values {
+  username: string;
+  email: string;
+  password: string;
+}
 
 const RegisterSchema = Yup.object().shape({
   username: baseSchemas.username.required(usernameErrors.Required),
@@ -72,8 +78,7 @@ const RegisterScreen: FC = () => {
       <Text h3 style={styles.textMessage}>
         {STRINGS.screens.register.Register}
       </Text>
-      <View
-        style={{width: '90%', alignItems: 'center', justifyContent: 'center'}}>
+      <View style={styles.inputContainer}>
         <Input
           value={username}
           onChangeText={handleChange('username')}
@@ -81,7 +86,6 @@ const RegisterScreen: FC = () => {
           placeholder="Username"
           errorMessage={touched.username ? errors.username : undefined}
           leftIcon={<Icon name="person" type="Ionicons" />}
-          // style={styles.input}
         />
         <Input
           value={email}
@@ -90,7 +94,6 @@ const RegisterScreen: FC = () => {
           placeholder="Email"
           errorMessage={touched.email ? errors.email : undefined}
           leftIcon={<Icon name="mail" type="Ionicons" />}
-          // style={styles.input}
         />
         <Input
           value={password}
@@ -101,10 +104,8 @@ const RegisterScreen: FC = () => {
           leftIcon={<Icon name="lock" type="Ionicons" />}
           rightIcon={<Icon name="eye-outline" type="ionicon" />}
           secureTextEntry={true}
-          // style={styles.input}
         />
-        <View style={{height: 60}} />
-
+        <Space size={60} />
         <Button
           title={STRINGS.screens.register.Submit}
           onPress={onPressSubmit}
